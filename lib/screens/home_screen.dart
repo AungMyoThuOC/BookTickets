@@ -1,3 +1,4 @@
+import 'package:booktickets/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,16 +12,37 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFeeedf2),
+      backgroundColor: Styles.bgColor,
       body: ListView(
         children: [
           Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      "Good morning"
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: const [
+                        Text(
+                          "Good morning"
+                        ),
+                        Text(
+                          "Book Tickets"
+                        ),
+                      ],
+                    ),
+                    Container(
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          image: const DecorationImage(
+                              fit: BoxFit.fitHeight,
+                              image: AssetImage(
+                                "assets/images/img_1.png",
+                              ))),
                     )
                   ],
                 )
