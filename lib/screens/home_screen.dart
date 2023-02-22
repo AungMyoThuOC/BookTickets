@@ -1,5 +1,8 @@
+import 'package:booktickets/screens/ticket_view.dart';
 import 'package:booktickets/utils/app_style.dart';
+import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -19,17 +22,21 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               children: [
+                const Gap(40),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
+                      children: [
                         Text(
-                          "Good morning"
+                          "Good morning",
+                          style: Styles.heaadLineStyle3,
                         ),
+                        const Gap(5),
                         Text(
-                          "Book Tickets"
+                          "Book Tickets",
+                          style: Styles.heaadLineStyle1,
                         ),
                       ],
                     ),
@@ -45,10 +52,53 @@ class _HomeScreenState extends State<HomeScreen> {
                               ))),
                     )
                   ],
-                )
+                ),
+                const Gap(25),
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: const Color(0xFFF4F6FD),
+                  ),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                  child: Row(
+                    children: [
+                      const Icon(
+                        FluentSystemIcons.ic_fluent_search_regular,
+                        color: Color(0xFFBFC205),
+                      ),
+                      Text(
+                        "Search",
+                        style: Styles.heaadLineStyle4,
+                      )
+                    ],
+                  ),
+                ),
+                const Gap(40),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Upcoming Flights",
+                      style: Styles.heaadLineStyle2,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        print("You are tapped");
+                      },
+                      child: Text(
+                        "View all",
+                        style: Styles.textStyle
+                            .copyWith(color: Styles.primaryColor),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
-          )
+          ),
+          const Gap(15),
+          TicketView(),
         ],
       ),
     );
