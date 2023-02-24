@@ -1,5 +1,6 @@
 import 'package:booktickets/screens/hotel_screen.dart';
 import 'package:booktickets/screens/ticket_view.dart';
+import 'package:booktickets/utils/app_info_list.dart';
 import 'package:booktickets/utils/app_style.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
@@ -125,7 +126,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   },
                   child: Text(
                     "View all",
-                    style: Styles.textStyle.copyWith(color: Styles.primaryColor),
+                    style:
+                        Styles.textStyle.copyWith(color: Styles.primaryColor),
                   ),
                 ),
               ],
@@ -136,10 +138,7 @@ class _HomeScreenState extends State<HomeScreen> {
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.only(left: 20),
             child: Row(
-              children: [
-                HotelScreen(),
-                HotelScreen(),
-              ],
+              children: hotelList.map((hotel) => )
             ),
           ),
         ],
