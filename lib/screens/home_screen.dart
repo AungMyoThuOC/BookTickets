@@ -104,11 +104,11 @@ class _HomeScreenState extends State<HomeScreen> {
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.only(left: 20),
             child: Row(
-              children: [
-                TicketView(),
-                TicketView(),
-              ],
-            ),
+                children: ticketList
+                    .map((singleTicket) => TicketView(
+                          ticket: singleTicket,
+                        ))
+                    .toList()),
           ),
           const Gap(15),
           Container(
@@ -138,8 +138,9 @@ class _HomeScreenState extends State<HomeScreen> {
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.only(left: 20),
             child: Row(
-              children: hotelList.map((hotel) => )
-            ),
+                children: hotelList
+                    .map((singleHotel) => HotelScreen(hotel: singleHotel))
+                    .toList()),
           ),
         ],
       ),

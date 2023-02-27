@@ -9,10 +9,11 @@ class HotelScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print('Hotel price is ${hotel['price']}');
     final size = AppLayout.getSize(context);
     return Container(
       width: size.width * 0.6,
-      height: 350,
+      height: AppLayout.getHeight(350),
       padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 17),
       margin: const EdgeInsets.only(right: 17, top: 5),
       decoration: BoxDecoration(
@@ -29,28 +30,28 @@ class HotelScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            height: 180,
+            height: AppLayout.getHeight(180),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
                 color: Styles.primaryColor,
                 image: DecorationImage(
                     fit: BoxFit.cover,
                     image: AssetImage(
-                      "assets/images/one.png",
+                      "assets/images/${hotel['image']}",
                     ))),
           ),
           const Gap(10),
           Text(
-            "Open space",
+            hotel['place'],
             style: Styles.heaadLineStyle2.copyWith(color: Styles.kakiColor),
           ),
           Text(
-            "London",
+            hotel['destination'],
             style: Styles.heaadLineStyle3.copyWith(color: Colors.white),
           ),
           const Gap(8),
           Text(
-            "\$40/night",
+            '\$${hotel['price']}/night',
             style: Styles.heaadLineStyle1.copyWith(color: Styles.kakiColor),
           ),
         ],
