@@ -15,7 +15,7 @@ class Styles {
   static TextStyle heaadLineStyle2 =
       TextStyle(fontSize: 21, color: textColor, fontWeight: FontWeight.bold);
   static TextStyle heaadLineStyle3 = TextStyle(
-      fontSize: 17, color: Colors.grey.shade500, fontWeight: FontWeight.w500);
+      fontSize: 17, fontWeight: FontWeight.w500);
   static TextStyle heaadLineStyle4 = TextStyle(
       fontSize: 14, color: Colors.grey.shade500, fontWeight: FontWeight.w500);
 }
