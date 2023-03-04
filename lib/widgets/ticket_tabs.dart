@@ -16,6 +16,10 @@ class AppTicketTabs extends StatelessWidget {
     return FittedBox(
       child: Container(
         padding: const EdgeInsets.all(3.5),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(AppLayout.getHeight(50)),
+          color: const Color(0xFFF4F6FD),
+        ),
         child: Row(
           children: [
             /*
@@ -51,10 +55,6 @@ class AppTicketTabs extends StatelessWidget {
                   ),
                 )),
           ],
-        ),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(AppLayout.getHeight(50)),
-          color: const Color(0xFFF4F6FD),
         ),
       ),
     );
