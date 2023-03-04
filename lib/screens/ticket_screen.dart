@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages, unused_local_variable
+
 import 'package:booktickets/screens/ticket_view.dart';
 import 'package:booktickets/utils/app_info_list.dart';
 import 'package:booktickets/utils/app_layout.dart';
@@ -27,7 +29,7 @@ class TicketScreen extends StatelessWidget {
               Gap(AppLayout.getHeight(40)),
               Text(
                 "Tickets",
-                style: Styles.heaadLineStyle1,
+                style: Styles.headLineStyle1,
               ),
               Gap(AppLayout.getHeight(20)),
               const AppTicketTabs(firstTab: "Upcoming", secondTab: "Previous"),
@@ -39,12 +41,13 @@ class TicketScreen extends StatelessWidget {
                   isColor: true,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 1,
               ),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
-                margin: EdgeInsets.symmetric(horizontal: 15),
+                color: Colors.white,
+                padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+                margin: const EdgeInsets.symmetric(horizontal: 15),
                 child: Column(
                   children: [
                     Row(
@@ -54,11 +57,13 @@ class TicketScreen extends StatelessWidget {
                           firstText: "Flutter DB",
                           secondText: "Passenger",
                           alignment: CrossAxisAlignment.start,
+                          isColor: false,
                         ),
                         AppColumnLayout(
                           firstText: "5221 478566",
                           secondText: "Passport",
                           alignment: CrossAxisAlignment.end,
+                          isColor: false,
                         ),
                       ],
                     ),
@@ -76,11 +81,13 @@ class TicketScreen extends StatelessWidget {
                           firstText: "364738 28274478",
                           secondText: "Number of E-ticket",
                           alignment: CrossAxisAlignment.start,
+                          isColor: false,
                         ),
                         AppColumnLayout(
                           firstText: "B2SG28",
                           secondText: "Booking Code",
                           alignment: CrossAxisAlignment.end,
+                          isColor: false,
                         ),
                       ],
                     ),
@@ -104,14 +111,14 @@ class TicketScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   "*** 2462",
-                                  style: Styles.heaadLineStyle3,
+                                  style: Styles.headLineStyle3,
                                 ),
                               ],
                             ),
-                            Gap(5),
+                            const Gap(5),
                             Text(
                               "Payment method",
-                              style: Styles.heaadLineStyle4,
+                              style: Styles.headLineStyle4,
                             )
                           ],
                         ),
@@ -180,7 +187,7 @@ class TicketScreen extends StatelessWidget {
             left: AppLayout.getHeight(22),
             top: AppLayout.getHeight(295),
             child: Container(
-              padding: EdgeInsets.all(3),
+              padding: const EdgeInsets.all(3),
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
@@ -198,7 +205,7 @@ class TicketScreen extends StatelessWidget {
             right: AppLayout.getHeight(22),
             top: AppLayout.getHeight(295),
             child: Container(
-              padding: EdgeInsets.all(3),
+              padding: const EdgeInsets.all(3),
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(

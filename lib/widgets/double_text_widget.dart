@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:booktickets/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +17,7 @@ class AppDoubleTextWidget extends StatelessWidget {
       children: [
         Text(
           bigText,
-          style: Styles.heaadLineStyle2,
+          style: Styles.headLineStyle2,
         ),
         InkWell(
           onTap: () {

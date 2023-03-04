@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print, unnecessary_string_escapes
+
 import 'package:booktickets/utils/app_layout.dart';
 import 'package:booktickets/utils/app_style.dart';
 import 'package:booktickets/widgets/column_layout.dart';
@@ -43,7 +45,7 @@ class ProfileScreen extends StatelessWidget {
                 children: [
                   Text(
                     "Book Tickets",
-                    style: Styles.heaadLineStyle1,
+                    style: Styles.headLineStyle1,
                   ),
                   Gap(AppLayout.getHeight(2)),
                   Text(
@@ -132,7 +134,7 @@ class ProfileScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Colors.transparent,
                       shape: BoxShape.circle,
-                      border: Border.all(width: 18, color: Color(0xFF264CD2))),
+                      border: Border.all(width: 18, color: const Color(0xFF264CD2))),
                 ),
               ),
               Container(
@@ -144,13 +146,13 @@ class ProfileScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     CircleAvatar(
+                      maxRadius: 25,
+                      backgroundColor: Colors.white,
                       child: Icon(
                         FluentSystemIcons.ic_fluent_lightbulb_filament_filled,
                         color: Styles.primaryColor,
                         size: 27,
                       ),
-                      maxRadius: 25,
-                      backgroundColor: Colors.white,
                     ),
                     Gap(AppLayout.getHeight(12)),
                     Column(
@@ -159,12 +161,12 @@ class ProfileScreen extends StatelessWidget {
                       children: [
                         Text(
                           "You\'v got a new award",
-                          style: Styles.heaadLineStyle2.copyWith(
+                          style: Styles.headLineStyle2.copyWith(
                               fontWeight: FontWeight.bold, color: Colors.white),
                         ),
                         Text(
                           "You have 95 flights in a year",
-                          style: Styles.heaadLineStyle2.copyWith(
+                          style: Styles.headLineStyle2.copyWith(
                               fontWeight: FontWeight.w500,
                               color: Colors.white.withOpacity(0.9),
                               fontSize: 16),
@@ -179,7 +181,7 @@ class ProfileScreen extends StatelessWidget {
           Gap(AppLayout.getHeight(25)),
           Text(
             "Accumulated miles",
-            style: Styles.heaadLineStyle2,
+            style: Styles.headLineStyle2,
           ),
           Gap(AppLayout.getHeight(20)),
           Container(
@@ -212,11 +214,11 @@ class ProfileScreen extends StatelessWidget {
                   children: [
                     Text(
                       "Miles accrued",
-                      style: Styles.heaadLineStyle4.copyWith(fontSize: 16),
+                      style: Styles.headLineStyle4.copyWith(fontSize: 16),
                     ),
                     Text(
                       "3 March 2023",
-                      style: Styles.heaadLineStyle4.copyWith(fontSize: 16),
+                      style: Styles.headLineStyle4.copyWith(fontSize: 16),
                     ),
                   ],
                 ),

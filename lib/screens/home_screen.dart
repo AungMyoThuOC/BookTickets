@@ -34,12 +34,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         Text(
                           "Good morning",
-                          style: Styles.heaadLineStyle3,
+                          style: Styles.headLineStyle3,
                         ),
                         const Gap(5),
                         Text(
                           "Book Tickets",
-                          style: Styles.heaadLineStyle1,
+                          style: Styles.headLineStyle1,
                         ),
                       ],
                     ),
@@ -72,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       Text(
                         "Search",
-                        style: Styles.heaadLineStyle4,
+                        style: Styles.headLineStyle4,
                       )
                     ],
                   ),

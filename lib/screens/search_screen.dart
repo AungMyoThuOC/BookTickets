@@ -22,7 +22,7 @@ class SearchScreen extends StatelessWidget {
           Gap(AppLayout.getHeight(40)),
           Text(
             "What are \nyou looking for?",
-            style: Styles.heaadLineStyle1
+            style: Styles.headLineStyle1
                 .copyWith(fontSize: AppLayout.getWidth(35)),
           ),
           Gap(AppLayout.getHeight(20)),
@@ -41,7 +41,7 @@ class SearchScreen extends StatelessWidget {
                   vertical: AppLayout.getWidth(18),
                   horizontal: AppLayout.getWidth(15)),
               decoration: BoxDecoration(
-                color: Color(0xD91130CE),
+                color: const Color(0xD91130CE),
                 borderRadius: BorderRadius.circular(AppLayout.getWidth(10)),
               ),
               child: Center(
@@ -91,7 +91,7 @@ class SearchScreen extends StatelessWidget {
                     Gap(AppLayout.getHeight(12)),
                     Text(
                       "20% discount on business class ticketsfrom Airline On International",
-                      style: Styles.heaadLineStyle2,
+                      style: Styles.headLineStyle2,
                     ),
                   ],
                 ),
@@ -104,7 +104,7 @@ class SearchScreen extends StatelessWidget {
                         width: size.width * 0.44,
                         height: AppLayout.getHeight(200),
                         decoration: BoxDecoration(
-                            color: Color(0xFF3AB8B8),
+                            color: const Color(0xFF3AB8B8),
                             borderRadius:
                                 BorderRadius.circular(AppLayout.getHeight(18))),
                         padding: EdgeInsets.symmetric(
@@ -115,14 +115,14 @@ class SearchScreen extends StatelessWidget {
                           children: [
                             Text(
                               "Discount\nforsurvey",
-                              style: Styles.heaadLineStyle2.copyWith(
+                              style: Styles.headLineStyle2.copyWith(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white),
                             ),
                             Gap(AppLayout.getHeight(10)),
                             Text(
                               "Take the survery about our services and get discount",
-                              style: Styles.heaadLineStyle2.copyWith(
+                              style: Styles.headLineStyle2.copyWith(
                                   fontWeight: FontWeight.w500,
                                   color: Colors.white,
                                   fontSize: 18),
@@ -138,7 +138,7 @@ class SearchScreen extends StatelessWidget {
                           decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               border: Border.all(
-                                  width: 18, color: Color(0xFF189999)),
+                                  width: 18, color: const Color(0xFF189999)),
                               color: Colors.transparent),
                         ),
                       ),
@@ -160,7 +160,7 @@ class SearchScreen extends StatelessWidget {
                       children: [
                         Text(
                           "Take love",
-                          style: Styles.heaadLineStyle2.copyWith(
+                          style: Styles.headLineStyle2.copyWith(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                           ),

@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:booktickets/utils/app_layout.dart';
 import 'package:booktickets/utils/app_style.dart';
 import 'package:flutter/material.dart';
@@ -43,16 +45,16 @@ class HotelScreen extends StatelessWidget {
           const Gap(10),
           Text(
             hotel['place'],
-            style: Styles.heaadLineStyle2.copyWith(color: Styles.kakiColor),
+            style: Styles.headLineStyle2.copyWith(color: Styles.kakiColor),
           ),
           Text(
             hotel['destination'],
-            style: Styles.heaadLineStyle3.copyWith(color: Colors.white),
+            style: Styles.headLineStyle3.copyWith(color: Colors.white),
           ),
           const Gap(8),
           Text(
             '\$${hotel['price']}/night',
-            style: Styles.heaadLineStyle1.copyWith(color: Styles.kakiColor),
+            style: Styles.headLineStyle1.copyWith(color: Styles.kakiColor),
           ),
         ],
       ),
